@@ -1,0 +1,21 @@
+<div class="row">
+    <div class="col-md-8">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let prod of products">
+                    <td><a routerLink="{{prod.uuid}}">{{prod.id}}</a></td>
+                    <td><a routerLink="{{prod.uuid}}">{{prod.name}}</a></td>
+                    <td>{{prod.price | currency}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="col-md-4"></div>
+</div>
